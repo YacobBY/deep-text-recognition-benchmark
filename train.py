@@ -127,6 +127,7 @@ def train(opt):
 
     # data parallel for multi-GPU
     model = torch.nn.DataParallel(model).cuda()
+    model = torch.nn.DataParallel(model).cuda()
     model.train()
 
     while(True):
