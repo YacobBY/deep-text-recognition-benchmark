@@ -123,7 +123,10 @@ def train(opt):
     i = start_iter
 
     if APEX_AVAILABLE:
-        model, optimizer = amp.initialize(model, optimizer, opt_level="O2")
+        model, optimizer = amp.initialize(
+            model, optimizer, opt_level="O2",
+            keep_batchnorm_fp32=True, loss_scale="dynamic"
+        )
 
     # data parallel for multi-GPU
     model = torch.nn.DataParallel(model).cuda()
@@ -155,9 +158,10 @@ def train(opt):
         if APEX_AVAILABLE:
             with amp.scale_loss(cost, optimizer) as scaled_loss:
                 scaled_loss.backward()
+                amp.clip_grad_norm_(amp.master_params(optimizer), opt.clip_grad)
         else:
             cost.backward()
-        torch.nn.utils.clip_grad_norm_(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
         optimizer.step()
 
         loss_avg.add(cost)
@@ -215,10 +219,10 @@ if __name__ == '__main__':
     parser.add_argument('--train_data', required=True, help='path to training dataset')
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
-    parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
-    parser.add_argument('--batch_size', type=int, default=250, help='input batch size')
+    parser.add_argument('--workers', type=int, help='number of data loading workers', default=16)
+    parser.add_argument('--batch_size', type=int, default=300, help='input batch size')
     parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
-    parser.add_argument('--valInterval', type=int, default=500, help='Interval between each validation')
+    parser.add_argument('--valInterval', type=int, default=250, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
