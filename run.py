@@ -9,6 +9,10 @@ from utils import CTCLabelConverter, AttnLabelConverter
 from dataset import RawDataset, AlignCollate
 from model import Model
 
+#CUDA_VISIBLE_DEVICES=0 python3 train.py \--train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \--select_data MJ-ST --batch_ratio 0.6-0.4 \--Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+# CUDA_VISIBLE_DEVICES=0 python3 train.py \--train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \--select_data MJ-ST --batch_ratio 0.6-0.4 \--Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
+
+
 
 def demo(opt):
     """ model configuration """
@@ -80,10 +84,11 @@ def demo(opt):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--image_folder', required=True, help='path to image_folder which contains text images')
+    parser.add_argument('--image_folder', required=False, help='path to image_folder which contains text images',
+                        default='/home/pc/Documents/deep-text-recognition-benchmark/demo_image')
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
     parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
-    parser.add_argument('--saved_model', required=True, help="path to saved_model to evaluation")
+    parser.add_argument('--saved_model', required=False, help="path to saved_model to evaluation", default='None-ResNet-None-CTC.pth')
     """ Data processing """
     parser.add_argument('--batch_max_length', type=int, default=25, help='maximum-label-length')
     parser.add_argument('--imgH', type=int, default=32, help='the height of the input image')
@@ -93,15 +98,15 @@ if __name__ == '__main__':
     parser.add_argument('--sensitive', action='store_true', help='for sensitive character mode')
     parser.add_argument('--PAD', action='store_true', help='whether to keep ratio then pad for image resize')
     """ Model Architecture """
-    parser.add_argument('--Transformation', type=str, required=True, help='Transformation stage. None|TPS')
-    parser.add_argument('--FeatureExtraction', type=str, required=True, help='FeatureExtraction stage. VGG|RCNN|ResNet')
-    parser.add_argument('--SequenceModeling', type=str, required=True, help='SequenceModeling stage. None|BiLSTM')
-    parser.add_argument('--Prediction', type=str, required=True, help='Prediction stage. CTC|Attn')
+    parser.add_argument('--Transformation', type=str, required=False, help='Transformation stage. None|TPS', default='None')
+    parser.add_argument('--FeatureExtraction', type=str, required=False, help='FeatureExtraction stage. VGG|RCNN|ResNet', default='ResNet')
+    parser.add_argument('--SequenceModeling', type=str, required=False, help='SequenceModeling stage. None|BiLSTM', default='None')
+    parser.add_argument('--Prediction', type=str, required=False, help='Prediction stage. CTC|Attn', default='CTC')
     parser.add_argument('--num_fiducial', type=int, default=20, help='number of fiducial points of TPS-STN')
     parser.add_argument('--input_channel', type=int, default=1, help='the number of input channel of Feature extractor')
     parser.add_argument('--output_channel', type=int, default=512,
                         help='the number of output channel of Feature extractor')
-    parser.add_argument('--hidden_size', type=int, default=256, help='the size of the LSTM hidden state')
+    parser.add_argument('--hidden_size', type=int, default=0, help='the size of the LSTM hidden state')
 
     opt = parser.parse_args()
 

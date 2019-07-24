@@ -11,7 +11,6 @@ import torch.nn.init as init
 import torch.optim as optim
 import torch.utils.data
 import numpy as np
-
 from utils import CTCLabelConverter, AttnLabelConverter, Averager
 from dataset import hierarchical_dataset, AlignCollate, Batch_Balanced_Dataset
 from model import Model
@@ -136,7 +135,7 @@ def train(opt):
 
         image_tensors, labels = train_dataset.get_batch()
         image = image_tensors.cuda()
-        text, length = converter.encode(labels, batch_max_length=opt.batch_max_length)
+        text, length = converter.encode(labels)
         batch_size = image.size(0)
 
         if 'CTC' in opt.Prediction:
@@ -146,7 +145,7 @@ def train(opt):
             cost = criterion(preds, text, preds_size, length)
 
         else:
-            preds = model(image, text[:, :-1]) # align with Attention.forward
+            preds = model(image, text)
             target = text[:, 1:]  # without [GO] Symbol
             cost = criterion(preds.view(-1, preds.shape[-1]), target.contiguous().view(-1))
 
@@ -208,6 +207,7 @@ def train(opt):
             sys.exit()
         i += 1
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--experiment_name', help='Where to store logs and models')
@@ -215,9 +215,9 @@ if __name__ == '__main__':
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
-    parser.add_argument('--batch_size', type=int, default=250, help='input batch size')
+    parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
     parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
-    parser.add_argument('--valInterval', type=int, default=500, help='Interval between each validation')
+    parser.add_argument('--valInterval', type=int, default=2000, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')

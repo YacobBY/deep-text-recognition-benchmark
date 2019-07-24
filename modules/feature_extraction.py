@@ -60,6 +60,7 @@ class ResNet_FeatureExtractor(nn.Module):
 
     def forward(self, input):
         return self.ConvNet(input)
+        return self.ConvNet(input)
 
 
 # For Gated RCNN
