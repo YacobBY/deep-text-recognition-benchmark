@@ -19,6 +19,7 @@ from test import validation
 
 try:
     from apex import amp
+    from apex import fp16_utils
     APEX_AVAILABLE = True
     amp_handle = amp.init(enabled=True)
 except ModuleNotFoundError:
@@ -123,13 +124,9 @@ def train(opt):
     i = start_iter
 
     if APEX_AVAILABLE:
-        model, optimizer = amp.initialize(
-            model, optimizer, opt_level="O2",
-            keep_batchnorm_fp32=True, loss_scale="dynamic"
-        )
+        model, optimizer = amp.initialize(model, optimizer, opt_level="O2")
 
     # data parallel for multi-GPU
-    model = torch.nn.DataParallel(model).cuda()
     model = torch.nn.DataParallel(model).cuda()
     model.train()
 
@@ -158,7 +155,7 @@ def train(opt):
         if APEX_AVAILABLE:
             with amp.scale_loss(cost, optimizer) as scaled_loss:
                 scaled_loss.backward()
-                amp.clip_grad_norm_(amp.master_params(optimizer), opt.clip_grad)
+                fp16_utils.clip_grad_norm(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
         else:
             cost.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
@@ -213,16 +210,17 @@ def train(opt):
             sys.exit()
         i += 1
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--experiment_name', help='Where to store logs and models')
     parser.add_argument('--train_data', required=True, help='path to training dataset')
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
-    parser.add_argument('--workers', type=int, help='number of data loading workers', default=16)
-    parser.add_argument('--batch_size', type=int, default=300, help='input batch size')
+    parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
+    parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
     parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
-    parser.add_argument('--valInterval', type=int, default=250, help='Interval between each validation')
+    parser.add_argument('--valInterval', type=int, default=2000, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
