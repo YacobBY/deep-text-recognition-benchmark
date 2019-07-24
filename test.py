@@ -20,10 +20,12 @@ def benchmark_all_eval(model, criterion, converter, opt, calculate_infer_time=Fa
     eval_data_list = ['IIIT5k_3000', 'SVT', 'IC03_860', 'IC03_867', 'IC13_857',
                       'IC13_1015', 'IC15_1811', 'IC15_2077', 'SVTP', 'CUTE80']
 
+
     if calculate_infer_time:
         evaluation_batch_size = 1  # batch_size should be 1 to calculate the GPU inference time per image.
     else:
         evaluation_batch_size = opt.batch_size
+
 
     list_accuracy = []
     total_forward_time = 0
@@ -40,6 +42,7 @@ def benchmark_all_eval(model, criterion, converter, opt, calculate_infer_time=Fa
             num_workers=int(opt.workers),
             collate_fn=AlignCollate_evaluation, pin_memory=True)
 
+
         _, accuracy_by_best_model, norm_ED_by_best_model, _, _, infer_time, length_of_data = validation(
             model, criterion, evaluation_loader, converter, opt)
         list_accuracy.append(f'{accuracy_by_best_model:0.3f}')
@@ -49,9 +52,11 @@ def benchmark_all_eval(model, criterion, converter, opt, calculate_infer_time=Fa
         print('Acc %0.3f\t normalized_ED %0.3f' % (accuracy_by_best_model, norm_ED_by_best_model))
         print('-' * 80)
 
+
     averaged_forward_time = total_forward_time / total_evaluation_data_number * 1000
     total_accuracy = total_correct_number / total_evaluation_data_number
     params_num = sum([np.prod(p.size()) for p in model.parameters()])
+
 
     evaluation_log = 'accuracy: '
     for name, accuracy in zip(eval_data_list, list_accuracy):
