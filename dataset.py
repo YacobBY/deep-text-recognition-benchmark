@@ -59,6 +59,7 @@ class Batch_Balanced_Dataset(object):
                 collate_fn=_AlignCollate, pin_memory=True)
             self.data_loader_list.append(_data_loader)
             self.dataloader_iter_list.append(iter(_data_loader))
+
         print('-' * 80)
         print('Total_batch_size: ', '+'.join(batch_size_list), '=', str(Total_batch_size))
         opt.batch_size = Total_batch_size
