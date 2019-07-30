@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< refs/remotes/origin/patch-2
     <list default="true" id="24aa49de-4d20-4d82-8f61-1ff7675cb6ee" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="24aa49de-4d20-4d82-8f61-1ff7675cb6ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+    </list>
+>>>>>>> dataset inclusion
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< refs/remotes/origin/patch-2
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>initial</find>
+      <find>clip</find>
+    </findStrings>
+  </component>
+>>>>>>> dataset inclusion
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -21,10 +37,15 @@
       </list>
     </option>
   </component>
+<<<<<<< refs/remotes/origin/patch-2
   <component name="ProjectId" id="1OUwj2xzzPnfOyt3Ew7I5SKUXvK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="1Ogztfs3lyWYiEIce5gGY2NSjde" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> dataset inclusion
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -125,15 +146,22 @@
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< refs/remotes/origin/patch-2
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+=======
+            <State />
+>>>>>>> dataset inclusion
           </value>
         </entry>
       </map>
     </option>
+<<<<<<< refs/remotes/origin/patch-2
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+=======
+>>>>>>> dataset inclusion
   </component>
 </project>
