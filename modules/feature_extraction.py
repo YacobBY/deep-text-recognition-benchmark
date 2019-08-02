@@ -29,16 +29,28 @@ class VGG_FeatureExtractor(nn.Module):
 
 
 
-class ResNet_FeatureExtractor(nn.Module):
-    """ FeatureExtractor of FAN (http://openaccess.thecvf.com/content_ICCV_2017/papers/Cheng_Focusing_Attention_Towards_ICCV_2017_paper.pdf) """
+
+class RCNN_FeatureExtractor(nn.Module):
+    """ FeatureExtractor of GRCNN (https://papers.nips.cc/paper/6637-gated-recurrent-convolution-neural-network-for-ocr.pdf) """
 
     def __init__(self, input_channel, output_channel=512):
-        super(ResNet_FeatureExtractor, self).__init__()
-        self.ConvNet = ResNet(input_channel, output_channel, BasicBlock, [1, 2, 5, 3])
+        super(RCNN_FeatureExtractor, self).__init__()
+        self.output_channel = [int(output_channel / 8), int(output_channel / 4),
+                               int(output_channel / 2), output_channel]  # [64, 128, 256, 512]
+        self.ConvNet = nn.Sequential(
+            nn.Conv2d(input_channel, self.output_channel[0], 3, 1, 1), nn.ReLU(True),
+            nn.MaxPool2d(2, 2),  # 64 x 16 x 50
+            GRCL(self.output_channel[0], self.output_channel[0], num_iteration=5, kernel_size=3, pad=1),
+            nn.MaxPool2d(2, 2),  # 64 x 8 x 25
+            GRCL(self.output_channel[0], self.output_channel[1], num_iteration=5, kernel_size=3, pad=1),
+            nn.MaxPool2d(2, (2, 1), (0, 1)),  # 128 x 4 x 26
+            GRCL(self.output_channel[1], self.output_channel[2], num_iteration=5, kernel_size=3, pad=1),
+            nn.MaxPool2d(2, (2, 1), (0, 1)),  # 256 x 2 x 27
+            nn.Conv2d(self.output_channel[2], self.output_channel[3], 2, 1, 0, bias=False),
+            nn.BatchNorm2d(self.output_channel[3]), nn.ReLU(True))  # 512 x 1 x 26
 
     def forward(self, input):
         return self.ConvNet(input)
-
 
 # For Gated RCNN
 class GRCL(nn.Module):
@@ -91,6 +103,25 @@ class GRCL_unit(nn.Module):
 
         return x
 
+def conv3x3(in_planes, out_planes, stride=1):
+    "3x3 convolution with padding"
+    return nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride,
+                     padding=1, bias=False)
+
+
+
+
+class ResNet_FeatureExtractor(nn.Module):
+    """ FeatureExtractor of FAN (http://openaccess.thecvf.com/content_ICCV_2017/papers/Cheng_Focusing_Attention_Towards_ICCV_2017_paper.pdf) """
+
+    def __init__(self, input_channel, output_channel=512):
+        super(ResNet_FeatureExtractor, self).__init__()
+        self.ConvNet = ResNet(input_channel, output_channel, BasicBlock, [1, 2, 5, 3])
+
+    def forward(self, input):
+        return self.ConvNet(input)
+
+
 
 class BasicBlock(nn.Module):
     expansion = 1
@@ -126,30 +157,6 @@ class BasicBlock(nn.Module):
         out = self.relu(out)
 
         return out
-
-
-class RCNN_FeatureExtractor(nn.Module):
-    """ FeatureExtractor of GRCNN (https://papers.nips.cc/paper/6637-gated-recurrent-convolution-neural-network-for-ocr.pdf) """
-
-    def __init__(self, input_channel, output_channel=512):
-        super(RCNN_FeatureExtractor, self).__init__()
-        self.output_channel = [int(output_channel / 8), int(output_channel / 4),
-                               int(output_channel / 2), output_channel]  # [64, 128, 256, 512]
-        self.ConvNet = nn.Sequential(
-            nn.Conv2d(input_channel, self.output_channel[0], 3, 1, 1), nn.ReLU(True),
-            nn.MaxPool2d(2, 2),  # 64 x 16 x 50
-            GRCL(self.output_channel[0], self.output_channel[0], num_iteration=5, kernel_size=3, pad=1),
-            nn.MaxPool2d(2, 2),  # 64 x 8 x 25
-            GRCL(self.output_channel[0], self.output_channel[1], num_iteration=5, kernel_size=3, pad=1),
-            nn.MaxPool2d(2, (2, 1), (0, 1)),  # 128 x 4 x 26
-            GRCL(self.output_channel[1], self.output_channel[2], num_iteration=5, kernel_size=3, pad=1),
-            nn.MaxPool2d(2, (2, 1), (0, 1)),  # 256 x 2 x 27
-            nn.Conv2d(self.output_channel[2], self.output_channel[3], 2, 1, 0, bias=False),
-            nn.BatchNorm2d(self.output_channel[3]), nn.ReLU(True))  # 512 x 1 x 26
-
-    def forward(self, input):
-        return self.ConvNet(input)
-
 
 class ResNet(nn.Module):
 
