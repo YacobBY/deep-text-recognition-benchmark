@@ -17,13 +17,6 @@ from dataset import hierarchical_dataset, AlignCollate, Batch_Balanced_Dataset
 from model import Model
 from test import validation
 
-try:
-    from apex import amp
-    from apex import fp16_utils
-    APEX_AVAILABLE = True
-    amp_handle = amp.init(enabled=True)
-except ModuleNotFoundError:
-    APEX_AVAILABLE = False
 
 def train(opt):
     """ dataset preparation """
@@ -49,7 +42,7 @@ def train(opt):
 
     if opt.rgb:
         opt.input_channel = 3
-    model = Model(opt).cuda()
+    model = Model(opt)
     print('model input parameters', opt.imgH, opt.imgW, opt.num_fiducial, opt.input_channel, opt.output_channel,
           opt.hidden_size, opt.num_class, opt.batch_max_length, opt.Transformation, opt.FeatureExtraction,
           opt.SequenceModeling, opt.Prediction)
@@ -69,7 +62,9 @@ def train(opt):
                 param.data.fill_(1)
             continue
 
-
+    # data parallel for multi-GPU
+    model = torch.nn.DataParallel(model).cuda()
+    model.train()
     if opt.continue_model != '':
         print(f'loading pretrained model from {opt.continue_model}')
         model.load_state_dict(torch.load(opt.continue_model))
@@ -123,13 +118,6 @@ def train(opt):
     best_norm_ED = 1e+6
     i = start_iter
 
-    if APEX_AVAILABLE:
-        model, optimizer = amp.initialize(model, optimizer, opt_level="O2")
-
-    # data parallel for multi-GPU
-    model = torch.nn.DataParallel(model).cuda()
-    model.train()
-
     while(True):
         # train part
         for p in model.parameters():
@@ -152,13 +140,8 @@ def train(opt):
             cost = criterion(preds.view(-1, preds.shape[-1]), target.contiguous().view(-1))
 
         model.zero_grad()
-        if APEX_AVAILABLE:
-            with amp.scale_loss(cost, optimizer) as scaled_loss:
-                scaled_loss.backward()
-                fp16_utils.clip_grad_norm(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
-        else:
-            cost.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
+        cost.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
         optimizer.step()
 
         loss_avg.add(cost)
@@ -209,7 +192,9 @@ def train(opt):
             print('end the training')
             sys.exit()
         i += 1
-
+"""
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST --batch_ratio 0.5-0.5 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+"""
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -219,8 +204,8 @@ if __name__ == '__main__':
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
     parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
-    parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
-    parser.add_argument('--valInterval', type=int, default=2000, help='Interval between each validation')
+    parser.add_argument('--num_iter', type=int, default=200000, help='number of iterations to train for')
+    parser.add_argument('--valInterval', type=int, default=1500, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
@@ -250,7 +235,7 @@ if __name__ == '__main__':
     parser.add_argument('--Prediction', type=str, required=True, help='Prediction stage. CTC|Attn')
     parser.add_argument('--num_fiducial', type=int, default=20, help='number of fiducial points of TPS-STN')
     parser.add_argument('--input_channel', type=int, default=1, help='the number of input channel of Feature extractor')
-    parser.add_argument('--output_channel', type=int, default=1024,
+    parser.add_argument('--output_channel', type=int, default=512,
                         help='the number of output channel of Feature extractor')
     parser.add_argument('--hidden_size', type=int, default=256, help='the size of the LSTM hidden state')
 
