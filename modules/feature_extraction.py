@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch.nn.functional as F
-#save before reverting to new dataset
+
 
 class VGG_FeatureExtractor(nn.Module):
     """ FeatureExtractor of CRNN (https://arxiv.org/pdf/1507.05717.pdf) """
