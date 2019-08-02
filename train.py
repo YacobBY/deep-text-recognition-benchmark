@@ -193,7 +193,7 @@ def train(opt):
             sys.exit()
         i += 1
 """
-CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST --batch_ratio 0.5-0.5 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST --batch_ratio 0.4-0.6 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
 """
 
 if __name__ == '__main__':
