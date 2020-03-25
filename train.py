@@ -228,7 +228,7 @@ def train(opt):
 '''
 CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \
---select_data MJ-ST-TB --batch_ratio 0.76-0.19-0.05 \
+--select_data MJ-ST-TB2 --batch_ratio 0.76-0.19-0.05 \
 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
 '''
 

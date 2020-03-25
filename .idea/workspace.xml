@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4220cde4-4bad-4119-996a-9feef70721b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/transformation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +21,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/saved_models/BackupLastModels2020-03-25" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_lmdb_release/training/TB2" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Other training sets" />
+      <recent name="$PROJECT_DIR$/saved_models" />
+      <recent name="$PROJECT_DIR$/result/oldLMDBsetsYacob" />
       <recent name="$PROJECT_DIR$/rollDataSet/fullDataSet" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/saved_models/BackupLastModels2020-03-25" />
-      <recent name="$PROJECT_DIR$/data_lmdb_release/training/TB" />
+      <recent name="$PROJECT_DIR$/data_lmdb_release/training/TB2" />
       <recent name="$PROJECT_DIR$/data_lmdb_release/training" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/rollDataSet/fullDataSet/rollDataSet" />
+      <recent name="$PROJECT_DIR$/data_lmdb_release/training/TB" />
+      <recent name="$PROJECT_DIR$/rollDataSet2/new" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.create_lmdb_dataset">
     <configuration name="create_lmdb_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="deep-text-recognition-benchmark" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_lmdb_dataset" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.create_lmdb_dataset" />
       </list>
     </recent_temporary>
   </component>
@@ -141,25 +142,47 @@
       <screen x="2048" y="0" width="2560" height="1440" />
     </state>
     <state x="3039" y="537" width="644" height="403" key="#com.intellij.fileTypes.FileTypeChooser/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585137248085" />
-    <state width="2467" height="494" key="GridCell.Tab.0.bottom" timestamp="1585138041070">
-      <screen x="2048" y="0" width="2560" height="1440" />
+    <state width="2467" height="493" key="GridCell.Tab.0.bottom" timestamp="1585160586676">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="2467" height="494" key="GridCell.Tab.0.bottom/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585138041070" />
-    <state width="2467" height="494" key="GridCell.Tab.0.center" timestamp="1585138041070">
-      <screen x="2048" y="0" width="2560" height="1440" />
+    <state width="2467" height="494" key="GridCell.Tab.0.bottom/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585152480073" />
+    <state width="2467" height="494" key="GridCell.Tab.0.bottom/4096.0.5120.2880/0.306.4096.2304@0.306.4096.2304" timestamp="1585154207318" />
+    <state width="1955" height="376" key="GridCell.Tab.0.bottom/70.164.4538.1276@70.164.4538.1276" timestamp="1585160205330" />
+    <state width="2467" height="493" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1585160586676" />
+    <state width="2467" height="493" key="GridCell.Tab.0.center" timestamp="1585160586675">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="2467" height="494" key="GridCell.Tab.0.center/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585138041070" />
-    <state width="2467" height="494" key="GridCell.Tab.0.left" timestamp="1585138041070">
-      <screen x="2048" y="0" width="2560" height="1440" />
+    <state width="2467" height="494" key="GridCell.Tab.0.center/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585152480073" />
+    <state width="2467" height="494" key="GridCell.Tab.0.center/4096.0.5120.2880/0.306.4096.2304@0.306.4096.2304" timestamp="1585154207318" />
+    <state width="1955" height="376" key="GridCell.Tab.0.center/70.164.4538.1276@70.164.4538.1276" timestamp="1585160205329" />
+    <state width="2467" height="493" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1585160586675" />
+    <state width="2467" height="493" key="GridCell.Tab.0.left" timestamp="1585160586674">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="2467" height="494" key="GridCell.Tab.0.left/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585138041070" />
-    <state width="2467" height="494" key="GridCell.Tab.0.right" timestamp="1585138041070">
-      <screen x="2048" y="0" width="2560" height="1440" />
+    <state width="2467" height="494" key="GridCell.Tab.0.left/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585152480072" />
+    <state width="2467" height="494" key="GridCell.Tab.0.left/4096.0.5120.2880/0.306.4096.2304@0.306.4096.2304" timestamp="1585154207318" />
+    <state width="1955" height="376" key="GridCell.Tab.0.left/70.164.4538.1276@70.164.4538.1276" timestamp="1585160205327" />
+    <state width="2467" height="493" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1585160586674" />
+    <state width="2467" height="493" key="GridCell.Tab.0.right" timestamp="1585160586676">
+      <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="2467" height="494" key="GridCell.Tab.0.right/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585138041070" />
-    <state x="2855" y="367" width="1016" height="743" key="SettingsEditor" timestamp="1585136901369">
-      <screen x="2048" y="0" width="2560" height="1440" />
+    <state width="2467" height="494" key="GridCell.Tab.0.right/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585152480073" />
+    <state width="2467" height="494" key="GridCell.Tab.0.right/4096.0.5120.2880/0.306.4096.2304@0.306.4096.2304" timestamp="1585154207318" />
+    <state width="1955" height="376" key="GridCell.Tab.0.right/70.164.4538.1276@70.164.4538.1276" timestamp="1585160205329" />
+    <state width="2467" height="493" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1585160586676" />
+    <state x="139" y="109" width="1016" height="743" key="SettingsEditor" timestamp="1585160708044">
+      <screen x="70" y="27" width="4538" height="1413" />
     </state>
     <state x="2855" y="367" width="1016" height="743" key="SettingsEditor/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585136901369" />
+    <state x="139" y="254" width="1798" height="743" key="SettingsEditor/70.164.4538.1276@70.164.4538.1276" timestamp="1585156990587" />
+    <state x="139" y="109" width="1016" height="743" key="SettingsEditor/70.27.4538.1413@70.27.4538.1413" timestamp="1585160708044" />
+    <state x="2287" y="-6" width="1437" height="1087" maximized="true" key="dock-window-1" timestamp="1585159199826">
+      <screen x="70" y="164" width="4538" height="1276" />
+    </state>
+    <state x="2287" y="-6" width="1437" height="1087" maximized="true" key="dock-window-1/70.164.4538.1276@70.164.4538.1276" timestamp="1585159199826" />
+    <state x="978" y="349" width="672" height="678" key="search.everywhere.popup" timestamp="1585154528215">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="978" y="349" width="672" height="678" key="search.everywhere.popup/70.27.2490.1413@70.27.2490.1413" timestamp="1585154528215" />
   </component>
 </project>
