@@ -23,7 +23,12 @@ class Batch_Balanced_Dataset(object):
         the 50% of the batch is filled with MJ and the other 50% of the batch is filled with ST.
         """
         print('-' * 80)
+        log = open(f'./saved_models/{opt.experiment_name}/log_dataset.txt', 'a')
+        dashed_line = '-' * 80
+        print(dashed_line)
+        log.write(dashed_line + '\n')
         print(f'dataset_root: {opt.train_data}\nopt.select_data: {opt.select_data}\nopt.batch_ratio: {opt.batch_ratio}')
+        log.write(f'dataset_root: {opt.train_data}\nopt.select_data: {opt.select_data}\nopt.batch_ratio: {opt.batch_ratio}\n')
         assert len(opt.select_data) == len(opt.batch_ratio)
 
         _AlignCollate = AlignCollate(imgH=opt.imgH, imgW=opt.imgW, keep_ratio_with_pad=opt.PAD)
