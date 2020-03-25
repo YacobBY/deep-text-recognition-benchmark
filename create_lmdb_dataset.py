@@ -87,7 +87,7 @@ if __name__ == '__main__':
     # fire.Fire(createDataset)
 
     inputPath = '/home/pc/Documents/deep-text-recognition-benchmark/rollDataSet'
-    gtFile = f'{inputPath}/groundTruth.txt'
+    gtFile = f'{inputPath}/0groundTruth.txt'
     outputPath = 'result/'
 
     dataSet = createDataset(inputPath, gtFile, outputPath, checkValid=True)

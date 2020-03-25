@@ -201,11 +201,11 @@ if __name__ == '__main__':
     parser.add_argument('--experiment_name', help='Where to store logs and models')
     parser.add_argument('--train_data', required=True, help='path to training dataset')
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
-    parser.add_argument('--manualSeed', type=int, default=1113, help='for random seed setting')
+    parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
-    parser.add_argument('--batch_size', type=int, default=50, help='input batch size')
-    parser.add_argument('--num_iter', type=int, default=400000, help='number of iterations to train for')
-    parser.add_argument('--valInterval', type=int, default=2000, help='Interval between each validation')
+    parser.add_argument('--batch_size', type=int, default=200, help='input batch size')
+    parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
+    parser.add_argument('--valInterval', type=int, default=4000, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
@@ -233,10 +233,9 @@ if __name__ == '__main__':
     parser.add_argument('--FeatureExtraction', type=str, required=True, help='FeatureExtraction stage. VGG|RCNN|ResNet')
     parser.add_argument('--SequenceModeling', type=str, required=True, help='SequenceModeling stage. None|BiLSTM')
     parser.add_argument('--Prediction', type=str, required=True, help='Prediction stage. CTC|Attn')
-    parser.add_argument('--num_fiducial', type=int, default=40, help='number of fiducial points of TPS-STN')
+    parser.add_argument('--num_fiducial', type=int, default=20, help='number of fiducial points of TPS-STN')
     parser.add_argument('--input_channel', type=int, default=1, help='the number of input channel of Feature extractor')
-    parser.add_argument('--output_channel', type=int, default=512,
-                        help='the number of output channel of Feature extractor')
+    parser.add_argument('--output_channel', type=int, default=512, help='the number of output channel of Feature extractor')
     parser.add_argument('--hidden_size', type=int, default=256, help='the size of the LSTM hidden state')
 
     opt = parser.parse_args()
@@ -279,3 +278,7 @@ if __name__ == '__main__':
         """
 
     train(opt)
+
+"""
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-TB --batch_ratio 0.76-0.20-0.04 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
+"""
