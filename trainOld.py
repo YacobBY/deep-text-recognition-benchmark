@@ -104,7 +104,8 @@ def train(opt):
         for k, v in args.items():
             opt_log += f'{str(k)}: {str(v)}\n'
         opt_log += '---------------------------------------\n'
-        print(opt_log)    parser.add_argument('--experiment_name', help='Where to store logs and models')
+        print(opt_log)
+        parser.add_argument('--experiment_name', help='Where to store logs and models')
         opt_file.write(opt_log)
 
     """ start training """

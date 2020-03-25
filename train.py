@@ -74,7 +74,7 @@ def train(opt):
             continue
 
     # data parallel for multi-GPU
-    model = torch.nn.DataParallel(model).to(device)
+    model = model.to(device)
     model.train()
     if opt.saved_model != '':
         print(f'loading pretrained model from {opt.saved_model}')
@@ -225,6 +225,13 @@ def train(opt):
             sys.exit()
         i += 1
 
+'''
+CUDA_VISIBLE_DEVICES=0 python3 train.py \
+--train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \
+--select_data MJ-ST-TB --batch_ratio 0.76-0.19-0.05 \
+--Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+'''
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -232,9 +239,9 @@ if __name__ == '__main__':
     parser.add_argument('--train_data', required=True, help='path to training dataset')
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
-    parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
+    parser.add_argument('--workers', type=int, help='number of data loading workers', default=5)
     parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
-    parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
+    parser.add_argument('--num_iter', type=int, default=400000, help='number of iterations to train for')
     parser.add_argument('--valInterval', type=int, default=2000, help='Interval between each validation')
     parser.add_argument('--saved_model', default='', help="path to model to continue training")
     parser.add_argument('--FT', action='store_true', help='whether to do fine-tuning')
