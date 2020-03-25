@@ -193,7 +193,7 @@ def train(opt):
             sys.exit()
         i += 1
 """
-CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-TB --batch_ratio 0.76-0.20-0.04 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-TB --batch_ratio 0.76-0.19-0.05 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
 """
 
 if __name__ == '__main__':
@@ -203,8 +203,8 @@ if __name__ == '__main__':
     parser.add_argument('--train_data', required=True, help='path to training dataset')
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
-    parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
-    parser.add_argument('--batch_size', type=int, default=200, help='input batch size')
+    parser.add_argument('--workers', type=int, help='number of data loading workers', default=7)
+    parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
     parser.add_argument('--num_iter', type=int, default=40000, help='number of iterations to train for')
     parser.add_argument('--valInterval', type=int, default=4000, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
@@ -279,7 +279,3 @@ if __name__ == '__main__':
         """
 
     train(opt)
-
-"""
-CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-TB --batch_ratio 0.76-0.20-0.04 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
-"""
