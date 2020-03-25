@@ -115,7 +115,7 @@ def train(opt):
 
     start_time = time.time()
     best_accuracy = -1
-    best_norm_ED = 1e+6
+    best_norm_ED = -1
     i = start_iter
 
     while (True):
@@ -176,7 +176,7 @@ def train(opt):
                 if current_accuracy > best_accuracy:
                     best_accuracy = current_accuracy
                     torch.save(model.state_dict(), f'./saved_models/{opt.experiment_name}/best_accuracy.pth')
-                if current_norm_ED < best_norm_ED:
+                if current_norm_ED > best_norm_ED:
                     best_norm_ED = current_norm_ED
                     torch.save(model.state_dict(), f'./saved_models/{opt.experiment_name}/best_norm_ED.pth')
                 best_model_log = f'best_accuracy: {best_accuracy:0.3f}, best_norm_ED: {best_norm_ED:0.2f}'
@@ -193,10 +193,11 @@ def train(opt):
             sys.exit()
         i += 1
 """
-CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST --batch_ratio 0.4-0.6 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-TB --batch_ratio 0.76-0.20-0.04 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
 """
 
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--experiment_name', help='Where to store logs and models')
     parser.add_argument('--train_data', required=True, help='path to training dataset')
@@ -204,7 +205,7 @@ if __name__ == '__main__':
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
     parser.add_argument('--batch_size', type=int, default=200, help='input batch size')
-    parser.add_argument('--num_iter', type=int, default=300000, help='number of iterations to train for')
+    parser.add_argument('--num_iter', type=int, default=40000, help='number of iterations to train for')
     parser.add_argument('--valInterval', type=int, default=4000, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
