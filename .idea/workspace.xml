@@ -2,8 +2,501 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4220cde4-4bad-4119-996a-9feef70721b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/100_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/100_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/100_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/100_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/101_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/101_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/101_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/101_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/102_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/102_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/102_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/102_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/103_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/103_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/103_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/103_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/104_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/104_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/104_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/104_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/105_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/105_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/105_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/105_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/106_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/106_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/106_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/106_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/107_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/107_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/107_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/107_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/108_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/108_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/108_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/108_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/109_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/109_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/109_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/109_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/10_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/10_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/10_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/10_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/110_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/110_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/110_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/110_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/111_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/111_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/111_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/111_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/112_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/112_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/112_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/112_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/113_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/113_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/113_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/113_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/114_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/114_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/114_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/114_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/115_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/115_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/115_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/115_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/116_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/116_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/116_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/116_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/118_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/118_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/118_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/118_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/119_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/119_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/11_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/11_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/11_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/11_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/120_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/120_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/120_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/120_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/121_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/121_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/121_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/121_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/122_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/122_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/122_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/122_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/123_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/123_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/123_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/123_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/125_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/125_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/125_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/125_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/126_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/126_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/126_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/126_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/127_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/127_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/127_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/127_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/128_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/128_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/128_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/128_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/129_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/129_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/129_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/129_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/12_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/12_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/12_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/12_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/130_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/130_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/130_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/130_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/131_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/131_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/131_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/131_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/132_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/132_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/132_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/132_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/133_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/133_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/133_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/133_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/134_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/134_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/134_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/134_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/135_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/135_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/135_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/135_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/136_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/136_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/136_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/136_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/137_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/137_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/137_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/137_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/138_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/138_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/138_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/138_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/139_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/139_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/139_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/139_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/13_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/13_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/13_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/13_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/140_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/140_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/140_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/140_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/141_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/141_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/141_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/141_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/142_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/142_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/142_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/142_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/143_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/143_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/143_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/143_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/144_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/144_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/144_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/144_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/145_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/145_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/145_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/145_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/146_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/146_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/146_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/146_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/147_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/147_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/147_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/147_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/148_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/148_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/148_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/148_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/149_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/149_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/149_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/149_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/14_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/14_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/14_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/14_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/150_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/150_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/150_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/150_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/151_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/151_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/151_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/151_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/152_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/152_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/152_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/152_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/153_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/153_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/153_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/153_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/154_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/154_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/154_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/154_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/155_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/155_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/155_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/155_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/156_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/156_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/156_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/156_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/157_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/157_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/157_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/157_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/158_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/158_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/158_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/158_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/159_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/159_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/159_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/159_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/160_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/160_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/160_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/160_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/161_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/161_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/161_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/161_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/162_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/162_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/162_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/162_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/163_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/163_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/163_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/163_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/164_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/164_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/164_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/164_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/165_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/165_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/165_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/165_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/166_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/166_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/166_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/166_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/167_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/167_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/167_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/167_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/168_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/168_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/168_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/168_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/169_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/169_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/169_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/169_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/16_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/16_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/16_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/16_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/170_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/170_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/170_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/170_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/172_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/172_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/172_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/172_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/173_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/173_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/173_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/173_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/175_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/175_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/175_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/175_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/176_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/176_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/176_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/176_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/177_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/177_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/177_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/177_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/178_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/178_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/178_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/178_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/179_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/179_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/179_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/179_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/17_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/17_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/17_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/17_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/180_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/180_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/181_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/181_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/181_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/181_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/182_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/182_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/182_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/182_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/183_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/183_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/183_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/183_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/184_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/184_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/184_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/184_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/185_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/185_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/185_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/185_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/186_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/186_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/186_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/186_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/187_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/187_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/187_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/187_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/188_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/188_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/188_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/188_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/189_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/189_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/189_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/189_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/18_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/18_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/18_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/18_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/190_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/190_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/190_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/190_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/191_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/191_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/191_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/191_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/192_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/192_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/192_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/192_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/193_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/193_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/193_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/193_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/194_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/194_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/194_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/194_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/195_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/195_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/195_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/195_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/197_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/197_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/197_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/197_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/198_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/198_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/198_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/198_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/199_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/199_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/199_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/199_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/19_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/19_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/19_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/19_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/1_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/1_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/1_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/200_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/200_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/200_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/200_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/201_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/201_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/201_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/201_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/202_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/202_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/202_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/202_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/204_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/204_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/204_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/204_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/205_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/205_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/205_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/205_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/206_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/206_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/206_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/206_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/207_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/207_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/207_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/207_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/209_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/209_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/209_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/209_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/20_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/20_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/20_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/20_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/210_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/210_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/210_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/210_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/211_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/211_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/211_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/211_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/212_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/212_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/213_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/213_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/214_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/214_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/214_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/214_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/215_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/215_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/216_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/216_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/217_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/217_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/218_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/218_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/218_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/218_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/219_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/219_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/220_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/220_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/220_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/220_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/221_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/221_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/221_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/221_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/224_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/224_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/224_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/224_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/225_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/225_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/225_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/225_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/226_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/226_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/226_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/226_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/228_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/228_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/228_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/228_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/229_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/229_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/229_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/229_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/22_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/22_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/22_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/22_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/230_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/230_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/230_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/230_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/231_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/231_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/231_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/231_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/232_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/232_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/233_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/233_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/233_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/233_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/234_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/234_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/234_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/234_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/235_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/235_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/235_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/235_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/236_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/236_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/236_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/236_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/237_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/237_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/237_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/237_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/238_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/238_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/238_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/238_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/239_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/239_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/23_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/23_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/23_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/23_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/240_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/240_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/240_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/240_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/241_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/241_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/241_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/241_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/243_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/243_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/243_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/243_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/244_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/244_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/244_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/244_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/245_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/245_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/245_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/245_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/246_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/246_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/247_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/247_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/248_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/248_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/249_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/249_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/249_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/249_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/24_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/24_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/24_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/24_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/250_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/250_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/250_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/250_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/251_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/251_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/251_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/251_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/252_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/252_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/252_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/252_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/253_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/253_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/254_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/254_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/255_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/255_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/256_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/256_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/256_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/256_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/257_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/257_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/257_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/257_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/258_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/258_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/258_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/258_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/259_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/259_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/259_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/259_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/25_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/25_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/25_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/25_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/260_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/260_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/260_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/260_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/261_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/261_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/261_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/261_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/262_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/262_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/262_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/262_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/263_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/263_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/263_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/263_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/264_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/264_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/264_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/264_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/265_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/265_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/265_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/265_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/266_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/266_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/266_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/266_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/267_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/267_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/268_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/268_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/269_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/269_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/26_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/26_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/26_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/26_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/270_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/270_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/271_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/271_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/272_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/272_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/273_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/273_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/274_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/274_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/275_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/275_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/276_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/276_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/277_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/277_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/278_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/278_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/279_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/279_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/27_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/27_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/27_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/27_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/280_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/280_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/281_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/281_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/282_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/282_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/283_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/283_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/284_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/284_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/285_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/285_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/286_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/286_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/287_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/287_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/28_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/28_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/28_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/28_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/29_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/29_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/29_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/29_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/2_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/2_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/2_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/2_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/30_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/30_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/30_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/30_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/31_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/31_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/31_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/31_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/32_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/32_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/32_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/32_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/33_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/33_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/33_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/33_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/34_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/34_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/34_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/34_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/35_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/35_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/35_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/35_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/36_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/36_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/36_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/36_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/37_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/37_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/37_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/37_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/38_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/38_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/38_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/38_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/39_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/39_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/39_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/39_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/3_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/3_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/3_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/3_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/40_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/40_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/40_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/40_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/41_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/41_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/41_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/41_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/42_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/42_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/42_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/42_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/43_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/43_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/43_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/43_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/44_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/44_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/44_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/44_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/45_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/45_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/45_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/45_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/46_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/46_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/46_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/46_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/48_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/48_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/48_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/48_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/4_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/4_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/4_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/4_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/50_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/50_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/50_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/50_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/51_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/51_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/51_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/51_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/52_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/52_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/52_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/52_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/53_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/53_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/53_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/53_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/54_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/54_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/54_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/54_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/55_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/55_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/55_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/55_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/56_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/56_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/57_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/57_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/57_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/57_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/58_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/58_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/58_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/58_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/59_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/59_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/59_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/59_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/5_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/5_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/5_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/5_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/60_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/60_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/60_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/60_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/61_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/61_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/61_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/61_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/62_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/62_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/62_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/62_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/63_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/63_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/63_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/63_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/64_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/64_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/64_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/64_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/66_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/66_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/66_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/66_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/67_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/67_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/67_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/67_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/68_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/68_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/68_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/68_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/69_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/69_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/69_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/69_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/6_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/6_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/6_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/6_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/70_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/70_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/70_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/70_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/71_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/71_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/71_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/71_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/74_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/74_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/74_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/74_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/75_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/75_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/75_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/75_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/76_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/76_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/76_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/76_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/77_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/77_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/77_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/77_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/78_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/78_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/78_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/78_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/79_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/79_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/79_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/79_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/7_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/7_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/7_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/7_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/80_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/80_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/81_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/81_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/82_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/82_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/82_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/82_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/83_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/83_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/84_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/84_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/86_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/86_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/86_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/86_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/87_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/87_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/87_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/87_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/88_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/88_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/88_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/88_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/8_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/8_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/8_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/8_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/90_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/90_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/90_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/90_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/91_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/91_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/91_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/91_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/92_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/92_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/92_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/92_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/93_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/93_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/93_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/93_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/94_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/94_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/94_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/94_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/95_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/95_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/95_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/95_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/96_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/96_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/96_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/96_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/97_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/97_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/97_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/97_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/98_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/98_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/98_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/98_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/99_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/99_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/99_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/99_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/9_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/9_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollDataSet2/9_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RawImagesForDatasetCreation/rollDataSet2/9_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +518,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Other training sets" />
-      <recent name="$PROJECT_DIR$/saved_models" />
-      <recent name="$PROJECT_DIR$/result/oldLMDBsetsYacob" />
-      <recent name="$PROJECT_DIR$/rollDataSet/fullDataSet" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_lmdb_release/training/TB2" />
       <recent name="$PROJECT_DIR$/data_lmdb_release/training" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data_lmdb_release/training/TB" />
       <recent name="$PROJECT_DIR$/rollDataSet2/new" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RawImagesForDatasetCreation" />
+      <recent name="$PROJECT_DIR$/Other training sets" />
+      <recent name="$PROJECT_DIR$/saved_models" />
+      <recent name="$PROJECT_DIR$/result/oldLMDBsetsYacob" />
+      <recent name="$PROJECT_DIR$/rollDataSet/fullDataSet" />
     </key>
   </component>
   <component name="RunManager" selected="Python.create_lmdb_dataset">
@@ -138,10 +632,11 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="3039" y="537" width="644" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585137248085">
-      <screen x="2048" y="0" width="2560" height="1440" />
+    <state x="2048" y="626" width="644" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585218101674">
+      <screen x="70" y="152" width="4538" height="1287" />
     </state>
     <state x="3039" y="537" width="644" height="403" key="#com.intellij.fileTypes.FileTypeChooser/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585137248085" />
+    <state x="2048" y="626" key="#com.intellij.fileTypes.FileTypeChooser/70.152.4538.1287@70.152.4538.1287" timestamp="1585218101674" />
     <state width="2467" height="493" key="GridCell.Tab.0.bottom" timestamp="1585160586676">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
@@ -176,9 +671,10 @@
     <state x="2855" y="367" width="1016" height="743" key="SettingsEditor/2048.0.2560.1440/0.153.2048.1152@2048.0.2560.1440" timestamp="1585136901369" />
     <state x="139" y="254" width="1798" height="743" key="SettingsEditor/70.164.4538.1276@70.164.4538.1276" timestamp="1585156990587" />
     <state x="139" y="109" width="1016" height="743" key="SettingsEditor/70.27.4538.1413@70.27.4538.1413" timestamp="1585160708044" />
-    <state x="2287" y="-6" width="1437" height="1087" maximized="true" key="dock-window-1" timestamp="1585159199826">
-      <screen x="70" y="164" width="4538" height="1276" />
+    <state x="2167" y="-6" width="1592" height="909" maximized="true" key="dock-window-1" timestamp="1585218107912">
+      <screen x="70" y="152" width="4538" height="1287" />
     </state>
+    <state x="2167" y="-6" width="1592" height="909" maximized="true" key="dock-window-1/70.152.4538.1287@70.152.4538.1287" timestamp="1585218107912" />
     <state x="2287" y="-6" width="1437" height="1087" maximized="true" key="dock-window-1/70.164.4538.1276@70.164.4538.1276" timestamp="1585159199826" />
     <state x="978" y="349" width="672" height="678" key="search.everywhere.popup" timestamp="1585154528215">
       <screen x="70" y="27" width="2490" height="1413" />
