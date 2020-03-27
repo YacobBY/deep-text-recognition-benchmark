@@ -195,6 +195,7 @@ def train(opt):
                 if current_norm_ED > best_norm_ED:
                     best_norm_ED = current_norm_ED
                     torch.save(model.state_dict(), f'./saved_models/{opt.experiment_name}/best_norm_ED.pth')
+
                 best_model_log = f'{"Best_accuracy":17s}: {best_accuracy:0.3f}, {"Best_norm_ED":17s}: {best_norm_ED:0.2f}'
 
                 loss_model_log = f'{loss_log}\n{current_model_log}\n{best_model_log}'
@@ -226,10 +227,10 @@ def train(opt):
         i += 1
 
 '''
-CUDA_VISIBLE_DEVICES=0 python3 train.py \
+python3 train.py \
 --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \
---select_data MJ-ST-TB2 --batch_ratio 0.76-0.19-0.05 \
---Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+--select_data MJ-ST-TB2 --batch_ratio 0.75-0.15-0.10 \
+--Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
 '''
 
 
@@ -239,11 +240,11 @@ if __name__ == '__main__':
     parser.add_argument('--train_data', required=True, help='path to training dataset')
     parser.add_argument('--valid_data', required=True, help='path to validation dataset')
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
-    parser.add_argument('--workers', type=int, help='number of data loading workers', default=5)
+    parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
     parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
-    parser.add_argument('--num_iter', type=int, default=400000, help='number of iterations to train for')
-    parser.add_argument('--valInterval', type=int, default=2000, help='Interval between each validation')
-    parser.add_argument('--saved_model', default='', help="path to model to continue training")
+    parser.add_argument('--num_iter', type=int, default=304000, help='number of iterations to train for')
+    parser.add_argument('--valInterval', type=int, default=4000, help='Interval between each validation')
+    parser.add_argument('--saved_model', default='/home/pc/Documents/deep-text-recognition-benchmark/saved_models/TPS-ResNet-None-Attn-Tebset3%/iter_300000.pth', help="path to model to continue training")
     parser.add_argument('--FT', action='store_true', help='whether to do fine-tuning')
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
