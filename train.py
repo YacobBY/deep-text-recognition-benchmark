@@ -227,24 +227,26 @@ def train(opt):
         i += 1
 
 '''
-python3 train.py \
---train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \
---select_data MJ-ST-TB2 --batch_ratio 0.75-0.15-0.10 \
---Transformation TPS --FeatureExtraction ResNet --SequenceModeling None --Prediction Attn
+Change the parser's default arguments to suit your needs, and then run train.py.
 '''
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--select_data', type=str, default='MJ-ST-TB-Signode')
+    parser.add_argument('--batch_ratio', type=str, default='0.74-0.20-0.3-0.3')
     parser.add_argument('--experiment_name', help='Where to store logs and models')
-    parser.add_argument('--train_data', required=True, help='path to training dataset')
-    parser.add_argument('--valid_data', required=True, help='path to validation dataset')
-    parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
-    parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
-    parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
-    parser.add_argument('--num_iter', type=int, default=304000, help='number of iterations to train for')
+
+    parser.add_argument('--Transformation', type=str, default='TPS', help='Transformation stage. None|TPS')
+    parser.add_argument('--FeatureExtraction', type=str, default='ResNet', help='FeatureExtraction stage. VGG|RCNN|ResNet')
+    parser.add_argument('--SequenceModeling', type=str, default='BiLSTM', help='SequenceModeling stage. None|BiLSTM')
+    parser.add_argument('--Prediction', type=str, default='Attn', help='Prediction stage. CTC|Attn')
+    parser.add_argument('--saved_model', default='saved_models/TPS-ResNet-BiLSTM-Attn-Seed1111/iter_200000.pth', help="path to model to continue training")
+
+    parser.add_argument('--workers', type=int, help='number of data loading workers', default=2)
+    parser.add_argument('--batch_size', type=int, default=160, help='input batch size')
+    parser.add_argument('--num_iter', type=int, default=400000, help='number of iterations to train for')
     parser.add_argument('--valInterval', type=int, default=4000, help='Interval between each validation')
-    parser.add_argument('--saved_model', default='/home/pc/Documents/deep-text-recognition-benchmark/saved_models/TPS-ResNet-None-Attn-Tebset3%/iter_300000.pth', help="path to model to continue training")
+
+    parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
     parser.add_argument('--FT', action='store_true', help='whether to do fine-tuning')
     parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
@@ -252,14 +254,14 @@ if __name__ == '__main__':
     parser.add_argument('--rho', type=float, default=0.95, help='decay rate rho for Adadelta. default=0.95')
     parser.add_argument('--eps', type=float, default=1e-8, help='eps for Adadelta. default=1e-8')
     parser.add_argument('--grad_clip', type=float, default=5, help='gradient clipping value. default=5')
+    parser.add_argument('--train_data', default='data_lmdb_release/training', help='path to training dataset')
+    parser.add_argument('--valid_data', default='data_lmdb_release/validation', help='path to validation dataset')
     """ Data processing """
-    parser.add_argument('--select_data', type=str, default='MJ-ST',
-                        help='select training data (default is MJ-ST, which means MJ and ST used as training data)')
-    parser.add_argument('--batch_ratio', type=str, default='0.5-0.5',
-                        help='assign ratio for each selected data in the batch')
+
+
     parser.add_argument('--total_data_usage_ratio', type=str, default='1.0',
                         help='total data usage ratio, this ratio is multiplied to total number of data.')
-    parser.add_argument('--batch_max_length', type=int, default=25, help='maximum-label-length')
+    parser.add_argument('--batch_max_length', type=int, default=15, help='maximum-label-length')
     parser.add_argument('--imgH', type=int, default=32, help='the height of the input image')
     parser.add_argument('--imgW', type=int, default=100, help='the width of the input image')
     parser.add_argument('--rgb', action='store_true', help='use rgb input')
@@ -269,11 +271,7 @@ if __name__ == '__main__':
     parser.add_argument('--PAD', action='store_true', help='whether to keep ratio then pad for image resize')
     parser.add_argument('--data_filtering_off', action='store_true', help='for data_filtering_off mode')
     """ Model Architecture """
-    parser.add_argument('--Transformation', type=str, required=True, help='Transformation stage. None|TPS')
-    parser.add_argument('--FeatureExtraction', type=str, required=True,
-                        help='FeatureExtraction stage. VGG|RCNN|ResNet')
-    parser.add_argument('--SequenceModeling', type=str, required=True, help='SequenceModeling stage. None|BiLSTM')
-    parser.add_argument('--Prediction', type=str, required=True, help='Prediction stage. CTC|Attn')
+
     parser.add_argument('--num_fiducial', type=int, default=20, help='number of fiducial points of TPS-STN')
     parser.add_argument('--input_channel', type=int, default=1,
                         help='the number of input channel of Feature extractor')
