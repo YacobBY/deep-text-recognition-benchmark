@@ -153,12 +153,6 @@ def train(opt):
             cost = criterion(preds, text.to(device), preds_size.to(device), length.to(device))
             torch.backends.cudnn.enabled = True
 
-            # # (ctc_b) To reproduce our pretrained model / paper, use our previous code (below code) instead of (ctc_a).
-            # # With PyTorch 1.2.0, the below code occurs NAN, so you may use PyTorch 1.1.0.
-            # # Thus, the result of CTCLoss is different in PyTorch 1.1.0 and PyTorch 1.2.0.
-            # # See https://github.com/clovaai/deep-text-recognition-benchmark/issues/56#issuecomment-526490707
-            # cost = criterion(preds, text, preds_size, length)
-
         else:
             preds = model(image, text[:, :-1])  # align with Attention.forward
             target = text[:, 1:]  # without [GO] Symbol
@@ -216,7 +210,13 @@ def train(opt):
                 print(predicted_result_log)
                 log.write(predicted_result_log + '\n')
 
+                #Save last correctly validated model Y
+                torch.save(
+                    model.state_dict(), f'./saved_models/{opt.experiment_name}/Last_Save_Passed_Validation_Step.pth')
+
         # save model per 1e+5 iter.
+
+
         if (i + 1) % 1e+5 == 0:
             torch.save(
                 model.state_dict(), f'./saved_models/{opt.experiment_name}/iter_{i + 1}.pth')
@@ -232,14 +232,14 @@ Change the parser's default arguments to suit your needs, and then run train.py.
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--select_data', type=str, default='MJ-ST-TB-Signode')
-    parser.add_argument('--batch_ratio', type=str, default='0.74-0.20-0.3-0.3')
+    parser.add_argument('--batch_ratio', type=str, default='0.74-0.22-0.2-0.2')
     parser.add_argument('--experiment_name', help='Where to store logs and models')
 
     parser.add_argument('--Transformation', type=str, default='TPS', help='Transformation stage. None|TPS')
     parser.add_argument('--FeatureExtraction', type=str, default='ResNet', help='FeatureExtraction stage. VGG|RCNN|ResNet')
     parser.add_argument('--SequenceModeling', type=str, default='BiLSTM', help='SequenceModeling stage. None|BiLSTM')
     parser.add_argument('--Prediction', type=str, default='Attn', help='Prediction stage. CTC|Attn')
-    parser.add_argument('--saved_model', default='saved_models/TPS-ResNet-BiLSTM-Attn-Seed1111/iter_200000.pth', help="path to model to continue training")
+    parser.add_argument('--saved_model', default='saved_models/TPS-ResNet-BiLSTM-Attn-Seed1111/best_accuracy.pth', help="path to model to continue training, if empty string a new file is made.")
 
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=2)
     parser.add_argument('--batch_size', type=int, default=160, help='input batch size')

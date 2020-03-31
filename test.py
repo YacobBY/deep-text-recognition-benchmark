@@ -100,8 +100,9 @@ def validation(model, criterion, evaluation_loader, converter, opt):
             # Calculate evaluation loss for CTC deocder.
             preds_size = torch.IntTensor([preds.size(1)] * batch_size)
             # permute 'preds' to use CTCloss format
+            torch.backends.cudnn.enabled = False
             cost = criterion(preds.log_softmax(2).permute(1, 0, 2), text_for_loss, preds_size, length_for_loss)
-
+            torch.backends.cudnn.enabled = True
             # Select max probabilty (greedy decoding) then decode index to character
             _, preds_index = preds.max(2)
             preds_index = preds_index.view(-1)
@@ -243,7 +244,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=192, help='input batch size')
     parser.add_argument('--saved_model', required=True, help="path to saved_model to evaluation")
     """ Data processing """
-    parser.add_argument('--batch_max_length', type=int, default=25, help='maximum-label-length')
+    parser.add_argument('--batch_max_length', type=int, default=15, help='maximum-label-length')
     parser.add_argument('--imgH', type=int, default=32, help='the height of the input image')
     parser.add_argument('--imgW', type=int, default=100, help='the width of the input image')
     parser.add_argument('--rgb', action='store_true', help='use rgb input')
