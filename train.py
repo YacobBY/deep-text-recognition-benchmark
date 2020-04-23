@@ -248,7 +248,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--manualSeed', type=int, default=1111, help='for random seed setting')
     parser.add_argument('--FT', action='store_true', help='whether to do fine-tuning')
-    parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
+    parser.add_argument('--adam', default=True, help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
     parser.add_argument('--beta1', type=float, default=0.9, help='beta1 for adam. default=0.9')
     parser.add_argument('--rho', type=float, default=0.95, help='decay rate rho for Adadelta. default=0.95')
@@ -257,7 +257,6 @@ if __name__ == '__main__':
     parser.add_argument('--train_data', default='data_lmdb_release/training', help='path to training dataset')
     parser.add_argument('--valid_data', default='data_lmdb_release/validation', help='path to validation dataset')
     """ Data processing """
-
 
     parser.add_argument('--total_data_usage_ratio', type=str, default='1.0',
                         help='total data usage ratio, this ratio is multiplied to total number of data.')

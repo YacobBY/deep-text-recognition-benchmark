@@ -209,7 +209,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_iter', type=int, default=40000, help='number of iterations to train for')
     parser.add_argument('--valInterval', type=int, default=4000, help='Interval between each validation')
     parser.add_argument('--continue_model', default='', help="path to model to continue training")
-    parser.add_argument('--adam', action='store_true', help='Whether to use adam (default is Adadelta)')
+    parser.add_argument('--adam', default=True, help='Whether to use adam (default is Adadelta)')
     parser.add_argument('--lr', type=float, default=1, help='learning rate, default=1.0 for Adadelta')
     parser.add_argument('--beta1', type=float, default=0.9, help='beta1 for adam. default=0.9')
     parser.add_argument('--rho', type=float, default=0.95, help='decay rate rho for Adadelta. default=0.95')
